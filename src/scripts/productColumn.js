@@ -8,7 +8,7 @@ export function createProductColumn(artistImageSrc) {
         <div class="image-display">
           <img src="${imageUrl}" alt="Artist" class="artist-image" />
           <div class="tshirt">
-            <img src="/public/images/tshirt-ascii.png" alt="T-shirt"/>
+            <img src="/images/tshirt-ascii.png" alt="T-shirt"/>
             <img src="${imageUrl}" alt="T-shirt design" class="tshirt-design" />
           </div>
         </div>
