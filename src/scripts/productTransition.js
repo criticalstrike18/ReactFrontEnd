@@ -62,6 +62,7 @@ document.addEventListener('astro:page-load', () => {
       const artistGrid = document.querySelector('#grid'); 
       const tooltip = document.querySelector('.tooltip');
       const artistGridHeader = document.querySelector('.title-header');
+      const footerSeparator = document.querySelector('footer').previousElementSibling;
       
       if (!artistGrid) return;
       
@@ -103,8 +104,8 @@ document.addEventListener('astro:page-load', () => {
           // Create the product grid with this specific artist's image
           productGrid = createProductGrid(artistImageSrc);
           
-          // Insert before footer
-          document.querySelector('footer').insertAdjacentElement('beforebegin', productGrid);
+          // Insert before the footer's separator to keep it visible
+          footerSeparator.insertAdjacentElement('beforebegin', productGrid);
           
           // Fade out artist grid
           if (artistGrid) artistGrid.style.opacity = '0';

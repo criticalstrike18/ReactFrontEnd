@@ -1,11 +1,10 @@
 // Function to add CSS styles for the product grid
 export function addStyles() {
-    const styleElement = document.createElement('style');
-    styleElement.textContent = `
+  const styleElement = document.createElement("style");
+  styleElement.textContent = `
       .product-grid-container {
         transition: opacity 0.5s ease;
         min-height: calc(100vh - 400px);
-        margin-bottom: 10rem;
         margin-top: 2rem;
         position: relative;
         z-index: 2;
@@ -239,5 +238,5 @@ export function addStyles() {
         }
       }
     `;
-    document.head.appendChild(styleElement);
-  }
+  document.head.appendChild(styleElement);
+}
