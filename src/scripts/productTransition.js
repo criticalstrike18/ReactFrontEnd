@@ -1,6 +1,5 @@
-// Import the separate components
+// Import the createProductColumn function
 import { createProductColumn } from './productColumn.js';
-import { addStyles } from './productStyles.js';
 
 // This script handles the transition from artist grid to product cards
 document.addEventListener('astro:page-load', () => {
@@ -65,9 +64,6 @@ document.addEventListener('astro:page-load', () => {
       const footerSeparator = document.querySelector('footer').previousElementSibling;
       
       if (!artistGrid) return;
-      
-      // Add the CSS styles
-      addStyles();
       
       // Store original event handlers for header buttons
       const sortButton = document.querySelector('[data-sort]');

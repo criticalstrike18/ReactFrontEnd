@@ -9,15 +9,6 @@ type Props = {
 const { albums } = Astro.props;
 ---
 
-<section>
+<section class="album-grid">
   {albums.map((album) => <AlbumCard album={album} />)}
 </section>
-
-<style>
-  section {
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-    flex-direction: column;
-  }
-</style>
